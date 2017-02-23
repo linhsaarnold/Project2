@@ -1,15 +1,32 @@
-.navbar {
+.navbar, .navbar-inverse, .navbar-fixed-top  {
     background-color: #002754;
     border-color: #002754;
+    border-style: solid;
+    border-bottom: thick #C63527;
 }
 
-.navbar-inverse {
-    background-color: #002754;
-    border-color: #002754;
+body {
+    padding-top: 40px;
+  }
+
+.stripe {
+    background-color: #C63527;
+    border-color: #C63527;
 }
 
-.navbar-fixed-top {
-    background-color: #002754;
-    border-color: #002754;
+.name {
+    background-color: #F5AA1C;
+    border-color: #F5AA1C;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.panel-heading {
+    text-align: center;
 }
 
