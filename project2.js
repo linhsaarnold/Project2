@@ -9,31 +9,31 @@ function moreinfo() {
 var countA = 0;
 function addinterestA() {
     countA++;
-    document.getElementById("intA").innerHTML = countA;
+    document.getElementById("IntA").innerHTML = countA;
 }
 
 var countB = 0;
 function addinterestA() {
     countB++;
-    document.getElementById("intB").innerHTML = countB;
+    document.getElementById("IntB").innerHTML = countB;
 }
 
 var countC = 0;
 function addinterestC() {
     countC++;
-    document.getElementById("intC").innerHTML = countC;
+    document.getElementById("IntC").innerHTML = countC;
 }
 
 var countD = 0;
 function addinterestD() {
     countD++;
-    document.getElementById("intD").innerHTML = countD;
+    document.getElementById("IntD").innerHTML = countD;
 }
 
 var countE = 0;
 function addinterestE() {
     countE++;
-    document.getElementById("intE").innerHTML = countE;
+    document.getElementById("IntE").innerHTML = countE;
 }
 
 var countF = 0;
@@ -45,53 +45,53 @@ function addinterestF() {
 var countG = 0;
 function addinterestG() {
     countG++;
-    document.getElementById("intG").innerHTML = countG;
+    document.getElementById("IntG").innerHTML = countG;
 }
 
 var countH = 0;
 function addinterestH() {
     countH++;
-    document.getElementById("intH").innerHTML = countH;
+    document.getElementById("IntH").innerHTML = countH;
 }
 
 var countI = 0;
 function addinterestI() {
     countI++;
-    document.getElementById("intI").innerHTML = countI;
+    document.getElementById("IntI").innerHTML = countI;
 }
 
 var countJ = 0;
 function addinterestJ() {
     countJ++;
-    document.getElementById("intJ").innerHTML = countJ;
+    document.getElementById("IntJ").innerHTML = countJ;
 }
 
 var countK = 0;
 function addinterestK() {
     countK++;
-    document.getElementById("intK").innerHTML = countK;
+    document.getElementById("IntK").innerHTML = countK;
 }
 
 var countL = 0;
 function addinterestL() {
     countL++;
-    document.getElementById("intL").innerHTML = countL;
+    document.getElementById("IntL").innerHTML = countL;
 }
 
 var countM = 0;
 function addinterestM() {
     countM++;
-    document.getElementById("intM").innerHTML = countM;
+    document.getElementById("IntM").innerHTML = countM;
 }
 
 var countN = 0;
 function addinterestN() {
     countN++;
-    document.getElementById("intN").innerHTML = countN;
+    document.getElementById("IntN").innerHTML = countN;
 }
 
 var countO = 0;
 function addinterestO() {
     countO++;
-    document.getElementById("intO").innerHTML = countO;
+    document.getElementById("IntO").innerHTML = countO;
 }
