@@ -48,7 +48,7 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search Items Here...">
       </div>
-      <button type="submit" class="btn btn-default" onclick="navbarsearch">Search</button>
+      <button type="submit" class="btn btn-default" onclick="navbarsearch()">Search</button>
     </form>
   </div>
 </nav>
@@ -66,7 +66,15 @@
   <div class="row">
     <div class="col-lg-12">
       <div class="name">
-        <h1>Recently Added</h1>
+        <h1>Recently Added
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Date Added</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Interest</a></li>
+          </ul></h1>
+        </h1>
       </div>
     </div>
   </div>
@@ -76,28 +84,37 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Math 130 good condition</div>
-        <div class="panel-body"><img src="http://1.bp.blogspot.com/_PCf3N1raM4c/TTnfWMmN29I/AAAAAAAAAZA/ZpXh47kovlg/s1600/calculus.JPG" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Math 130 good condition
+          <br>
+          Interested:<span id="IntD">0</span></td>
+        </div>
+        <div class="panel-body"><img src="http://1.bp.blogspot.com/_PCf3N1raM4c/TTnfWMmN29I/AAAAAAAAAZA/ZpXh47kovlg/s1600/calculus.JPG" class="img center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price $100<button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $90<button id="info" onclick="addinterestD()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
     </div> 
     <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Bio 255 Notes</div>
-        <div class="panel-body"><img src="https://s-media-cache-ak0.pinimg.com/736x/12/c4/66/12c4664b715d142d078c602f1721bb53.jpg" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Bio 255 Notes
+          <br>
+          Interested:<span id="IntE">0</span></td>
+        </div>
+        <div class="panel-body"><img src="https://s-media-cache-ak0.pinimg.com/736x/12/c4/66/12c4664b715d142d078c602f1721bb53.jpg" class="img center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price $30 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $30 <button id="info" onclick="addinterestE()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
      </div>   
      <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Purple Aritzia Shirt, barely worn</div>
-        <div class="panel-body"><img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/07/26/5798090ef0137de6ab005d14/m_57af8c28981829d1c003d8b8.jpg" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Purple Aritzia Shirt, barely worn
+          <br>
+          Interested:<span id="IntF">0</span></td>
+        </div>
+        <div class="panel-body"><img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/07/26/5798090ef0137de6ab005d14/m_57af8c28981829d1c003d8b8.jpg" class="img center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price $45 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $45 <button id="info" onclick="addinterestF()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
     </div> 
