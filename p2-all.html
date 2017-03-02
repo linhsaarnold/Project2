@@ -8,6 +8,9 @@
 
     <title>UVIC Shop and Swap</title>
 
+    <!-- Project2 JS File -->
+    <script type="text/javascript" src="project2.js"></script>
+
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom styles for the navigation bar template -->
@@ -17,12 +20,12 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Project2 JS File -->
-    <script type="text/javascript" src="project2.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    
 
 </head>
 
@@ -48,7 +51,7 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search Items Here...">
       </div>
-      <button type="submit" class="btn btn-default" onclick="navbarsearch">Search</button>
+      <button type="submit" class="btn btn-default" onclick="navbarsearch()">Search</button>
     </form>
   </div>
 </nav>
@@ -66,7 +69,14 @@
   <div class="row">
     <div class="col-lg-12">
       <div class="name">
-        <h1>Shop All Categories</h1>
+        <h1>Shop All Categories   
+        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Date Added</a></li>
+          <li><a href="#">Price</a></li>
+          <li><a href="#">Interest</a></li>
+        </ul></h1>
       </div>
     </div>
   </div>
@@ -76,28 +86,40 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Clothing</div>
-        <div class="panel-body"><img src="https://www.google.ca/imgres?imgurl=https%3A%2F%2Fimg.clipartfox.com%2F179534d243cf41009d7b66b53d5355b5_simple-black-clothes-hanger-clothes-hanger-clipart_8423-4467.png&imgrefurl=https%3A%2F%2Fclipartfox.com%2Fcategories%2Fview%2Fb635d289de409ca08d5b0eb3d6a3754e81c69813%2Fclothes-hanger-clipart.html&docid=Ya2rwuRReFBXbM&tbnid=qEkztMOMFJFN4M%3A&vet=1&w=8423&h=4467&bih=707&biw=1326&q=clothing%20hanger&ved=0ahUKEwjP0YyWoLbSAhUQwmMKHfEhD-0QMwgvKAAwAA&iact=mrc&uact=8" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Math 130 good condition
+          <br>
+          Interested:<span id="IntA">0</span></td>
+        </div>
+        <div class="panel-body"><img src="http://1.bp.blogspot.com/_PCf3N1raM4c/TTnfWMmN29I/AAAAAAAAAZA/ZpXh47kovlg/s1600/calculus.JPG" class="center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $90 <button id="info" onclick="addinterestA()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
     </div> 
     <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Textbooks</div>
-        <div class="panel-body"><img src="https://img.clipartfest.com/a351e82628810a2838dc471824301562_books-clip-art-book-free-book-stack-and-apple-clipart-black-and-white-transparent_1152-757.png" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Bio 255 Notes
+          <br>
+          Interested:<span id="IntB">0</span></td>
+        </div>
+        <div class="panel-body"><img src="https://s-media-cache-ak0.pinimg.com/736x/12/c4/66/12c4664b715d142d078c602f1721bb53.jpg" class="center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $30 <button id="info" onclick="addinterestB()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
      </div>   
      <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-heading">Class Notes</div>
-        <div class="panel-body"><img src="https://img.clipartfest.com/5ac1410897f8fbcd6173ddc58214afc0_take-note-school-clipart-1-school-note-clipart_712-756.png" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+        <div class="panel-heading">Purple Aritzia Shirt, barely worn
+          <br>
+          Interested:<span id="IntC">0</span></td>
+        </div>
+        <div class="panel-body"><img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/07/26/5798090ef0137de6ab005d14/m_57af8c28981829d1c003d8b8.jpg" class="center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          Price <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">Seller Profile</button><button id="info" onclick="" style="float: right;">More Info</button>
+          Price $45 <button id="info" onclick="addinterestC()" style="float: right;">Add Interest</button><button id="info" onclick="location.href='p2-sampleprofile.html';" style="float: right;">Seller Profile</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
+        </div>
+      </div>
+    </div> 
         </div>
       </div>
      </div>  
