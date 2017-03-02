@@ -48,18 +48,25 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search Items Here...">
       </div>
-      <button type="submit" class="btn btn-default" onclick="navbarsearch">Search</button>
+      <button type="submit" class="btn btn-default" onclick="navbarsearch()">Search</button>
     </form>
   </div>
 </nav>
 
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="stripe">
+      <br>
+    </div>
+  <div class="clearfix visible-lg"></div>
+</div>
 <div class="container-fluid">
   <div class="row">
       <div class="stripe">
         <br>
       </div>
-    <div class="clearfix visible-lg"></div>
-  </div>
+  <div class="clearfix visible-lg"></div>
 </div>
 
 <div class="container">
@@ -71,31 +78,38 @@
     </div>
   </div>
 </div>
-<div class="container">
+
+<div class="container">    
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-default">
-        <div class="panel-body"><img src="http://3.bp.blogspot.com/_Pb8PTTK1Szk/S_wv1ima3eI/AAAAAAAAAD4/9pkbnD9cDIg/s1600/kasey.jpg" class="img-responsive center-block" alt="Image" width="300" height="300">
-        
-        <h1>Edit Your User Profile</h1>
-<P><input type="submit" name="submitbtn" value="Edit"> 
-<P><B>Edit your user information below:</B></P>
-
-
-<form method="POST" action="index.htm">
-
-<P><input type="text" size="15" name="FD_profile_first_name" value="John">
-<input type="text" size="15" name="FD_profile_last_name" value="Doe">
-<BR>Name
-<P><input type="text" size="30" name="FD_profile_email" value="johndoe@gmail.com">
-<BR>Email
-<P><input type="text" size="30" name="FD_profile_email" value="Computer Science">
-<BR>Faculty
-
-<P><input type="submit" name="submitbtn" value="Change User Profile"> 
-        
-        </div>
+        <div class="panel-body"><img src="http://3.bp.blogspot.com/_Pb8PTTK1Szk/S_wv1ima3eI/AAAAAAAAAD4/9pkbnD9cDIg/s1600/kasey.jpg" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
+      </div>
      </div>
+     <div class="col-sm-8">
+        <table class="table" id"about">
+            <thead>
+                <tr>
+                    <th>Faculty</th>
+                    <th>Year<th>
+                    <th>Hometown<th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" size="30" name="FD_profile_email" value="Computer Science"></td>
+                    <td><input type="text" size="30" name="FD_profile_email" value="Second"></td>
+                    <td><input type="text" size="30" name="FD_profile_email" value="Computer Science"></td>
+                </tr>
+            </tbody>  
+        </table>
+        <div class="name">
+            <h1>About John</h1>
+        </div>
+        <div class="about"
+            <p>Hello! My name is john...</p>
+        </div>
+    </div>
   </div>
 </div>
 
@@ -115,7 +129,7 @@
         <div class="panel-heading">"Computer Science Illuminated" Textbook</div>
         <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/I/51rVYveGDgL.jpg" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          $85 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">More Info</button>
+          $85 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
     </div> 
@@ -124,7 +138,7 @@
         <div class="panel-heading">Engineering CSC Textbook</div>
         <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/I/51KfsPZNmOL._SX450_BO1,204,203,200_.jpg" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          $100 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">More Info</button>
+          $100 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
      </div>   
@@ -133,7 +147,7 @@
         <div class="panel-heading">"Linear Algebra and Probablity" Textbook</div>
         <div class="panel-body"><img src="https://images.tandf.co.uk/common/jackets/amazon/978146650/9781466501553.jpg" class="img-responsive center-block" alt="Image" width="300" height="300"></div>
         <div class="panel-footer">
-          $75 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="" style="float: right;">More Info</button>
+          $75 <button id="info" onclick="" style="float: right;">Add Interest</button><button id="info" onclick="moreinfo()" style="float: right;">More Info</button>
         </div>
       </div>
      </div>  
